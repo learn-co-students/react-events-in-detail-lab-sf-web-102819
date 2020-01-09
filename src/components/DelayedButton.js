@@ -17,8 +17,9 @@ class DelayedButton extends Component {
     setTimeout(() => {
       this.props.onDelayedClick(e);
     }, this.props.delay);
-    
-    // 3) call three arguments without an anonymous function
+
+    // 3) call three arguments without an anonymous function. The third arg (e) is passed as an arg of this.props.onDelayedClick
+    // https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals#setTimeout
     // setTimeout(this.props.onDelayedClick, this.props.delay, e);
   };
 
